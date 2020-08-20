@@ -1,0 +1,271 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Italianno&family=Lobster&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        *
+        {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html
+        {
+                font-size: 10px;
+                font-family: 'Montserrat', sans-serif;
+                scroll-behavior: smooth;
+        }
+        .flex-container
+        {
+            display: flex;
+
+        }
+        .animation .animation-header
+        {
+            text-align:center;
+            font-size:3rem;
+            margin: 40px auto;
+            font-weight:bolder;
+        }
+        .animation .animation-header
+        {
+            text-align:center;
+            font-size:3rem;
+            margin: 40px auto;
+            font-weight:bolder;
+        }
+        #p1
+        {
+            text-align:center;
+            font-size:1.3rem;
+            margin: 40px auto;
+            font-weight:bolder;
+        }
+        table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  width: 80%;
+  margin: auto;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #56f8c2;
+}
+tr:nth-child(odd) {
+  background-color: #75fcdf5e;
+}
+#navbar
+{
+	height:auto;
+	width:100%;
+	position:fixed;
+	z-index:100;
+}
+.nav-bar
+{
+	background-color:black;
+	
+	left:0;
+	top:0;
+	padding: 1rem 5rem;
+	width: 100%;
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+}
+.nav-bar .brand a
+{   
+	font-family: 'Italianno', cursive;
+	font-size:4rem;
+	color:white;
+	text-decoration: none;
+	
+}
+.nav-bar .nav-list
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.nav-bar .nav-list .hamburger
+{
+	height:auto;
+	border: 2px solid white;
+	border-radius: 50%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height:70px;
+	width:70px;
+	transition: .3s ease transform;
+	cursor: pointer;
+	z-index:5;
+}
+.nav-bar .nav-list .hamburger .bar
+{
+	height: 2px;
+	width: 30px;
+	background-color: white;
+	position: relative;
+	display: flex;
+
+}
+.nav-bar .nav-list .hamburger .bar::before,.nav-bar .nav-list .hamburger .bar::after
+{
+  content: '';
+  position:absolute;
+  left:0;
+  height:100%;
+  width:100%;
+  background-color: white;
+  transition: .3s ease all;
+}
+.nav-bar .nav-list .hamburger .bar::before
+{
+	top:8px;
+}
+.nav-bar .nav-list .hamburger .bar::after
+{
+	bottom:8px;
+}
+.nav-bar .nav-list ul
+{
+	position:absolute;
+	width:100%;
+	top:0px;
+	left:0;
+	background-color:rgb(255, 255, 255) ;
+	padding: 5rem 0;
+	transform: translateY(-100%);
+	transition: .3s ease transform;
+	text-align:center;
+	z-index: 3;
+	
+}
+.nav-bar .nav-list ul li
+{
+	list-style:none;
+	display: block;
+	position: relative;
+	
+}
+.nav-bar .nav-list ul li::after
+{
+	content:'';
+	position:absolute;
+	width:5rem;
+	height:.2rem;
+	background-color: black;
+	left:50%;
+	transform:translateX(-50%) scale(0);
+	bottom:0;
+	transition: .3s ease transform;
+}
+.nav-bar .nav-list ul li:hover:after
+{
+	transform:translateX(-50%) scale(1);
+}
+
+.nav-bar .nav-list ul li a
+{
+	font-size: 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:black;
+    font-weight: bold;
+	display:block;
+	letter-spacing: .15rem;
+	padding: 1rem 2rem;
+}
+.nav-bar .nav-list.open ul
+{
+	transform: translateY(90px);
+}
+.nav-bar .nav-list .hamburger.active .bar::before
+{
+   top:0;
+   transform: rotate(45deg);
+}
+.nav-bar .nav-list .hamburger.active .bar::after
+{
+   top:0;
+   transform: rotate(-45deg);
+}
+.nav-bar .nav-list .hamburger.active .bar
+{
+   background-color:transparent;
+}
+
+        
+    </style>
+</head>
+<body>
+    <section id="nav-bar" class="container">
+        <header class="nav-bar">
+            <div class="brand"><a href="#">Amanrajak</a></div>
+            <div class="nav-list">
+                <div class="hamburger">
+                    <div class="bar"></div>
+                </div>
+                <ul>
+                    <li><a href="responsive_site.html">HOME</a></li>
+                    <li><a href="resume.html">ABOUT ME</a></li>
+                    <li><a href="responsive_gallery.html">FRIENDS</a></li>
+                    <li><a href="#">MORE</a></li>
+                </ul>
+            </div>
+        </header>
+   
+   
+   
+   
+       </section>
+    <section class="flex-container">
+      <div class="animation">
+          <div class="animation-header">
+              <p>SOME ANIMATED WEBSITES SAMPLE </p>
+          </div>
+          <table>
+              <tr>
+                  <th>NAME</th>
+                  <th>LINK</th>
+              </tr>
+              <tr>
+                  <td>LEAF ANIMATION</td>
+                  <td><a href="leaf.html">LEAF.001</a></td>                
+              </tr>
+              <tr>
+                <td>CAR ANIMATION</td>
+                <td><a href="transition.html">CAR.002</a></td>                 
+            </tr>
+            <tr>
+                <td>SMOKE ANIMATION</td>
+                <td><a href="smoke.html">SMOKE.003</a></td>                 
+            </tr>
+          </table>    
+          <p id="p1">USE DESKTOP/DESKTOP MODE TO VIEW BETTER ANIMATION</p>   
+      </div>
+
+    </section>
+    <script>
+        const hamburger_icon = document.querySelector('#nav-bar .nav-bar .nav-list .hamburger');
+        const nav_list =document.querySelector('#nav-bar .nav-bar .nav-list');
+        
+        hamburger_icon.addEventListener('click',()=>{
+            nav_list.classList.toggle('open');
+            hamburger_icon.classList.toggle('active');
+    
+        });
+    </script>
+</body>
+</html>
